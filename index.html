@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Заказ суши</h1>
+    <img class="blok" src="img/depositphotos_97290530-stock-photo-sushi-set-on-black-stone.jpg" alt="суши" width="250"
+        height="150">
+    <form action="mail.php" method="POST">
+        <ul>
+            <li>
+                <label>
+                    <span>имя:</span>
+                    <input type="text" name="firstName" id="fname">
+                </label>
+            </li>
+            <li>
+                <label>
+                    город:
+                    <input type="text" name="citi" id="citi" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    адрес:
+                    <input type="text " name="address" id="adress" required>
+                </label>
+            </li>
+            <li>
+                <label> телефон:
+                    <input type="tel" name="tel" id="tel" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <img src="img/email.png" alt="конверт" id="email" width="60" height="40" id="email-1">
+                    <input type="email" name="email" id="email" required>
+                </label>
+            </li>
+            <li>
+                <label>
+                    количество палачек
+                    <input type="number" name="number" id="number" min="0" max="15">
+
+                </label>
+            </li>
+            <li>
+                <p>выбор палачек</p>
+                <input type="radio" id="wand-1" name="wand">
+                <label for="wand-1">учебные</label>
+                <input type="radio" id="wand-2" name="wand">
+                <label for="wand-2">обычные</label>
+            </li>
+            <li>
+                <p><strong>выбор суши</strong></p>
+                <p><select name="select" multiple>
+                        <option selected value="s1">с беконом</option>
+                        <option value="s2">филадедьфия</option>
+                        <option value="s3">колифорния</option>
+                    </select></p>
+            </li>
+            <p>нужно ли класть салфетки</p>
+            <input type="radio" id="napkins" name="napkins">
+            <label for="napkins">да</label>
+            <input type="radio" id="napkins-1" name="napkins">
+            <label for="napkins-1">нет</label>
+            <li>
+                <label>
+                    дополнительные коментарии
+                    <input type="text" name="text1" id="text-1">
+                </label>
+            </li>
+        </ul>
+        <input type="submit" value="отправить">
+
+    </form>
+
+</body>
+
+</html>

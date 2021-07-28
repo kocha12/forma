@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+.blok{
+    display: block;
+    margin: auto;
+}
+#fname{
+    margin: 10px;
+}
+#citi{
+    margin: 10px;
+}
+#adress{
+    margin: 10px;
+}
+#tel{
+    margin: 10px;
+}
+ul{
+    list-style: none;
+}
+#number{
+    margin: 10px;
+}
+#text-1{
+    margin: 20px;
+}
+input{
+    margin-left: 50px;
+}
+#email-1{
+    margin-bottom: -3px;
+    margin-top: 5px;
+}
+#email{
+    margin-left: 5px;
+    margin-top: -5px;
+}
